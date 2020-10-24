@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t KolyaKorush/docker-react -f Dockerfile.dev .
+  - docker build -t kolyakorush/docker-react -f Dockerfile.dev .
 
 script:
   - docker run KolyaKorush/docker-react npm run test -- --coverage
